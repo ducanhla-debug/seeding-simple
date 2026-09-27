@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Product portfolio by Duc Anh Daniel: Seeding Simple and FB Messenger Hub." />
+  <link rel="icon" href="assets/app-icon.png" />
+  <title>Duc Anh Daniel — Seeding Simple &amp; FB Messenger Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Seeding Simple home"><span class="brand-mark">SS</span><span>Seeding Simple</span></a>
+    <nav aria-label="Case study navigation">
+      <a href="#overview">Overview</a><a href="#features">Features</a><a href="#workflow">Workflow</a><a href="#safety">Safety</a><a href="#messenger-hub">Messenger Hub</a><a href="#creator">Creator</a>
+    </nav>
+    <span class="version">Windows Beta 0.1</span>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="overview">
+      <div class="hero-copy reveal">
+        <h1>A safer way to run multi-profile social workflows.</h1>
+        <p>Seeding Simple brings content intake, profile-specific image rules, review queues, and guarded automation into one calm Windows workspace.</p>
+        <div class="actions"><a class="button primary" href="#features">Explore the product <span>→</span></a><a class="button secondary" href="#validation">View validation</a></div>
+        <a class="hero-also" href="#messenger-hub">Also in this portfolio: <b>FB Messenger Hub</b> →</a>
+      </div>
+      <div class="product-stage reveal">
+        <div class="window-bar"><span></span><span></span><span></span><b>Seeding Simple Beta</b></div>
+        <img src="assets/product-setup.png" alt="Seeding Simple initial setup and readiness screen" />
+      </div>
+      <div class="hero-foot reveal"><span>01</span><h2>From content to consistent execution.</h2><p>Designed to standardize how small teams prepare, review, and run profile-based workflows—with control built in.</p></div>
+    </section>
+
+    <section class="context band" aria-labelledby="problem-title">
+      <div class="section-number">02</div>
+      <div><h2 id="problem-title">Operational work becomes fragile when every step lives somewhere else.</h2></div>
+      <p>Profiles in one folder. Content in a spreadsheet. Images across local drives. Publishing in Chrome. Comments inside Android emulators. Seeding Simple turns those moving parts into a single, observable process.</p>
+    </section>
+
+    <section class="features" id="features">
+      <div class="feature-heading">
+        <span>03 — Product capabilities</span>
+        <h2>One workspace. Six operational capabilities.</h2>
+        <p>Select a capability to explore exactly how the product supports the workflow.</p>
+      </div>
+      <div class="feature-explorer">
+        <div class="feature-rail" role="tablist" aria-label="Product capabilities">
+          <button role="tab" aria-selected="false" data-feature="profiles"><i>01</i><span><b>Profile &amp; Group Mapping</b><small>Connect identities to the correct destinations.</small></span></button>
+          <button role="tab" aria-selected="false" data-feature="sheets"><i>02</i><span><b>Google Sheet Intake</b><small>Turn prepared rows into validated tasks.</small></span></button>
+          <button role="tab" aria-selected="true" class="active" data-feature="rules"><i>03</i><span><b>Profile-specific Image Rules</b><small>Give every profile its own visual logic.</small></span></button>
+          <button role="tab" aria-selected="false" data-feature="images"><i>04</i><span><b>Pinterest &amp; Local Library</b><small>Source images without locking users in.</small></span></button>
+          <button role="tab" aria-selected="false" data-feature="queue"><i>05</i><span><b>Review &amp; Scheduling Queue</b><small>Approve, schedule, retry, and pause safely.</small></span></button>
+          <button role="tab" aria-selected="false" data-feature="monitor"><i>06</i><span><b>MuMu Comments &amp; Live Monitor</b><small>Observe Android actions as they happen.</small></span></button>
+        </div>
+        <div class="feature-stage" role="tabpanel">
+          <div class="demo-shell">
+            <div class="demo-topbar">
+              <div class="demo-badge"><span class="demo-dot"></span><strong>Interactive demo</strong><small>Fictional sample data</small></div>
+              <button id="runDemo" type="button"><span>▶</span> Run demo</button>
+            </div>
+            <div class="demo-title">
+              <div><span id="featureWindowLabel">Image rules &amp; readiness</span><h3 id="demoHeading">Profile-specific Image Rules</h3></div>
+              <div class="demo-live"><i></i><span id="demoStatus">Ready to run</span></div>
+            </div>
+            <div id="demoCanvas" class="demo-canvas" aria-live="polite"></div>
+          </div>
+          <div class="feature-detail">
+            <div><span id="featureLabel">Profile-specific Image Rules</span><h3 id="featureTitle">Use the right images for the right profile.</h3><p id="featureDescription">Define keyword rules and quality filters per profile, so the image strategy can change without changing the workflow.</p></div>
+            <ul id="featureProofs"><li>Preferred and excluded keywords per profile</li><li>Strict or assisted matching modes</li><li>Face, watermark, and text-heavy image filters</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow" id="workflow">
+      <div class="section-head reveal"><span>04</span><h2>From scattered operations to one controlled flow.</h2><p>Set up once, then move from prepared content to live actions through deliberate checkpoints.</p></div>
+      <ol class="flow-list" aria-label="Interactive workflow steps">
+        <li class="reveal active" data-workflow="profiles" tabindex="0" role="button" aria-pressed="true"><b>01</b><h3>Connect profiles</h3><p>Map each Chrome profile to the right group and local data folder.</p></li>
+        <li class="reveal" data-workflow="sheets" tabindex="0" role="button" aria-pressed="false"><b>02</b><h3>Import content</h3><p>Read structured post content and schedules from a shared Google Sheet.</p></li>
+        <li class="reveal" data-workflow="rules" tabindex="0" role="button" aria-pressed="false"><b>03</b><h3>Apply image rules</h3><p>Use profile-specific keywords, exclusions, and quality filters.</p></li>
+        <li class="reveal" data-workflow="queue" tabindex="0" role="button" aria-pressed="false"><b>04</b><h3>Review the queue</h3><p>Inspect content and media before anything is approved.</p></li>
+        <li class="reveal" data-workflow="checks" tabindex="0" role="button" aria-pressed="false"><b>05</b><h3>Run dry checks</h3><p>Validate browser and emulator setup without a live action.</p></li>
+        <li class="reveal" data-workflow="enable" tabindex="0" role="button" aria-pressed="false"><b>06</b><h3>Enable live actions</h3><p>Unlock publishing only after readiness conditions are met.</p></li>
+      </ol>
+      <div class="workflow-visual reveal">
+        <div class="workflow-demo-head"><div><span>Interactive workflow demo</span><h3 id="workflowDemoTitle">Connect profiles</h3></div><p id="workflowDemoText">Profile folders and destinations are checked before the workflow begins.</p><span class="workflow-demo-badge"><i></i> Safe simulation</span></div>
+        <div class="image-frame workflow-frame">
+          <img id="workflowDemoImage" src="assets/workflow-profiles.gif" alt="Animated Connect profiles feature demonstration" />
+        </div>
+        <div class="gate-line"><span class="gate-icon">✓</span><strong>Every live action stays behind an explicit readiness gate.</strong><p>Validations, dry-runs, and manual review help prevent accidental publishing.</p></div>
+      </div>
+    </section>
+
+    <section class="engineering" id="engineering">
+      <div class="engineering-intro reveal"><span>05 — Engineering for practical use</span><h2>Built for real operational constraints.</h2><p>The product is designed around local accounts, changing platforms, and the need to make every automated step visible and reversible.</p></div>
+      <div class="principles">
+        <article class="reveal"><span class="line-icon">◎</span><div><h3>Local-first customer data</h3><p>Profiles, operational history, and settings stay inside the customer’s Windows AppData folder rather than a shared vendor database.</p></div></article>
+        <article class="reveal"><span class="line-icon">⌘</span><div><h3>Per-profile image rules</h3><p>Each profile can define preferred and excluded keywords, strict matching, face detection, watermark checks, and text-heavy image filtering.</p></div></article>
+        <article class="reveal"><span class="line-icon">◇</span><div><h3>Dry-run safety gates</h3><p>Live posting requires a successful Chrome check. Live commenting requires successful checks on two distinct MuMu windows.</p></div></article>
+        <article class="reveal"><span class="line-icon">⊞</span><div><h3>Native Windows delivery</h3><p>A familiar Setup.exe includes the application runtime, desktop shortcuts, guided onboarding, and separated customer data.</p></div></article>
+      </div>
+    </section>
+
+
+    <section class="validation band" id="validation">
+      <div class="validation-copy reveal"><span>06 — Validation</span><h2>Tested as a product, not only as source code.</h2></div>
+      <div class="validation-list reveal">
+        <p><strong>289 / 289</strong><span>automated tests passed</span></p>
+        <p><strong>Windows x64</strong><span>installer, launch, and uninstall verified</span></p>
+        <p><strong>Clean start</strong><span>zero bundled profiles, queue items, or customer credentials</span></p>
+      </div>
+    </section>
+
+    <section class="safety" id="safety">
+      <div class="reveal"><span>07 — Safety by design</span><h2>Automation should earn trust before it earns access.</h2><p>Live posting and commenting remain disabled until the corresponding checks have passed.</p></div>
+      <ul class="safety-steps reveal"><li>Check profiles</li><li>Validate content</li><li>Confirm permissions</li><li>Enable actions</li></ul>
+    </section>
+    <section class="hub" id="messenger-hub">
+      <div class="hub-inner">
+        <div class="hub-intro">
+          <div>
+            <span class="hub-eyebrow">08 — Second product</span>
+            <h2>FB Messenger Hub</h2>
+            <p class="hub-lead">Run 3 to 10+ personal Messenger accounts at once in one desktop app. Every account stays signed in, in its own session, and every customer message reaches one shared feed with a CRM beside the chat.</p>
+          </div>
+          <ul class="hub-meta" aria-label="Product facts">
+            <li><small>Platform</small><b>Electron desktop app</b></li>
+            <li><small>Runs on</small><b>Windows · macOS 1.1.0</b></li>
+            <li><small>Restore point</small><b>stable-2026.09.19-r1</b></li>
+          </ul>
+        </div>
+
+        <div class="mh-block">
+          <div class="mh-head">
+            <h3>Every account signed in, side by side, in one window.</h3>
+            <p>Each account gets its own colour on the left rail and its own unread badge. New messages from all accounts land in one feed. Click a message or an account to see how that account is kept separate.</p>
+          </div>
+          <div class="mh-demo">
+            <div class="mh-top">
+              <div class="mh-badge"><span class="demo-dot"></span><strong>Interactive demo</strong><small>Fictional accounts and customers</small></div>
+              <button id="mhRun" type="button"><span>▶</span> Simulate incoming messages</button>
+            </div>
+            <div class="mh-body">
+              <nav class="mh-rail" aria-label="Accounts in the demo">
+                <button type="button" class="mh-feedbtn" id="mhFeedBtn" aria-label="Unified feed"><span class="mh-bell">◉</span><small>FEED</small><b class="mh-count" id="mhTotal">0</b></button>
+                <div class="mh-sep"></div>
+                <div id="mhAccounts" class="mh-accs"></div>
+                <div class="mh-add" aria-hidden="true">+</div>
+              </nav>
+              <div class="mh-feed">
+                <div class="mh-feedhead"><b>Unified feed</b><span id="mhFeedMeta">All accounts</span></div>
+                <ol id="mhFeed" class="mh-list" aria-live="polite"></ol>
+              </div>
+              <aside class="mh-panel" id="mhPanel" aria-live="polite"></aside>
+            </div>
+          </div>
+          <div class="mh-stats">
+            <p><strong>3 – 10+</strong><span>personal accounts signed in on one computer</span></p>
+            <p><strong>1 partition</strong><span>per account for cookies, cache and storage</span></p>
+            <p><strong>1 feed</strong><span>for unread messages from every account</span></p>
+            <p><strong>Per-account</strong><span>safety state, so one checkpoint pauses only that account</span></p>
+          </div>
+        </div>
+
+        <figure class="hub-shot">
+          <div class="hub-bar"><span></span><span></span><span></span><b>FB Messenger Hub · Chat + Mini CRM</b></div>
+          <img src="assets/hub-chat-crm.jpg" alt="Messenger Hub with account rail on the left, a Messenger conversation in the centre and the Mini CRM dock on the right" loading="lazy" />
+          <figcaption>Real app screen. Names, avatars and messages are blurred to protect the people in the conversation.</figcaption>
+        </figure>
+
+        <div class="hub-grid">
+          <article><i>◫</i><h3>Isolated account sessions</h3><p>Each account runs in its own <code>persist:fb_account_&lt;id&gt;</code> partition, so cookies, cache and storage never cross between accounts.</p></article>
+          <article><i>◉</i><h3>Unified notification feed</h3><p>Unread counts from every account appear as badges and a single timeline. Clicking a message jumps straight to the right account.</p></article>
+          <article><i>▤</i><h3>Mini CRM dock</h3><p>Opening a chat loads that customer's phone, delivery address, colour tags, profile URL and dated notes beside the conversation.</p></article>
+          <article><i>⇅</i><h3>Two-way Google Sheets sync</h3><p>Edits are pushed to the team's Sheet through an Apps Script web app, and changes made on the Sheet are pulled back every 5 minutes.</p></article>
+          <article><i>▽</i><h3>Customer funnel</h3><p>All customers from all accounts in one table, counted by stage: new, consulting, closed, VIP, follow-up and watch-out. Export to Excel-safe CSV or JSON.</p></article>
+          <article><i>⧉</i><h3>One-click order copy</h3><p>Name, phone, address, tags and notes are copied in one block, ready to paste into Viettel Post, GHTK or GHN.</p></article>
+        </div>
+
+        <div class="hub-split">
+          <figure class="hub-shot small">
+            <img src="assets/hub-funnel.jpg" alt="Customer funnel screen with stage counters, tag filters and a customer table" loading="lazy" />
+            <figcaption>Customer funnel view. Customer and account names are blurred.</figcaption>
+          </figure>
+          <div class="hub-safety">
+            <span class="hub-eyebrow">Built to protect personal accounts</span>
+            <h3>The person at the keyboard sends every message.</h3>
+            <ul>
+              <li><b>No auto-fill, no auto-send.</b> Every path that typed or sent messages for the user has been removed.</li>
+              <li><b>Checkpoint-aware pause.</b> When Facebook shows a checkpoint, CAPTCHA or identity check, the Hub stops background work on that account and asks for manual handling.</li>
+              <li><b>Honest browser identity.</b> The user agent matches the real operating system and the bundled Chromium version.</li>
+              <li><b>One app instance.</b> Opening the Hub twice never starts competing Messenger sessions.</li>
+              <li><b>Local customer data.</b> Logins and CRM records stay on the user's machine and are never included in release packages.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hub-proof">
+          <p><strong>9 / 9</strong><span>test groups passed on the macOS 1.1.0 build</span></p>
+          <p><strong>Apple Silicon + Intel</strong><span>.dmg and .zip packages, plus the Windows build</span></p>
+          <p><strong>Real-world checks</strong><span>launch, account switching, CRM and draft-without-sending tested by hand</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="creator" id="creator">
+      <div class="creator-portrait reveal">
+        <img src="assets/duc-anh-daniel.png" alt="Portrait of Duc Anh Daniel" />
+        <div><span>Based in</span><strong>Hanoi, Vietnam</strong></div>
+      </div>
+      <div class="creator-copy reveal">
+        <span>09 — Meet the creator</span>
+        <h2>Duc Anh Daniel</h2>
+        <h3>Creative &amp; Automation Specialist</h3>
+        <p class="creator-lead">I combine creativity, content, and automation to build smarter social media workflows and practical digital products.</p>
+        <p>I am a creative thinker with a strong interest in building brands and engaging social media experiences. Driven by curiosity and imagination, I enjoy transforming ideas into practical digital products, automated workflows, and more efficient ways of working.</p>
+        <p>My approach brings together creative planning, content thinking, problem-solving, and automation. I focus on making ideas compelling while building systems that are easier to operate, scale, and improve over time.</p>
+      </div>
+      <div class="creator-capabilities reveal">
+        <div class="skill-list">
+          <span>Core skills</span>
+          <ul><li><b>Strategic Planning</b><small>Turning objectives into structured workflows.</small></li><li><b>Creative Problem Solving</b><small>Finding practical solutions to operational challenges.</small></li><li><b>Content Development</b><small>Shaping content around brand and audience.</small></li><li><b>Social Media Automation</b><small>Reducing repetitive work with controlled systems.</small></li></ul>
+        </div>
+        <div class="tool-list">
+          <span>Tools &amp; platforms</span>
+          <div><b>Meta Business Suite</b><b>Canva</b><b>CapCut</b><b>Seedance</b><b>Codex</b></div>
+          <span class="cap-label">Capabilities</span>
+          <p>AI workflow building · Browser automation · AI influencer building · Data research · Application testing · Interface design</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark">SS</span><span>Seeding Simple</span></a><p>Seeding Simple · FB Messenger Hub · Product portfolio</p><button id="backTop">Back to top ↑</button></footer>
+  <script src="script.js"></script>
+</body>
+</html>
